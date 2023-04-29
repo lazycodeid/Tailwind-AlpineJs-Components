@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1b6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@layer custom {
+    .bg-grid {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMiAzMicgd2lkdGg9JzMyJyBoZWlnaHQ9JzMyJyBmaWxsPSdub25lJyBzdHJva2U9JyNmMWY1ZjknPjxwYXRoIGQ9J00wIC41SDMxLjVWMzInLz48L3N2Zz4=);
+    }
+
+    [data-theme="dark"] .bg-grid {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(241 245 249 / 0.03)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+    }
+
+    [data-theme="dark"] .GridLockup_beams-0___8Vns {
+        background-image: url(https://tailwindcss.com/_next/static/media/1-dark@tinypng.a99d6c93.png);
+        background-size: 125.5rem 100%;
+        height: 28.8125rem;   
+    }
+
+    /* content */
+    .content-article {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .content-article p {
+        @apply py-5;
+    }
+
+    .content-article img {
+        @apply rounded max-w-full;
+    }
+
+    .bg-border {
+        @apply border-slate-200;
+    }
+
+    [data-theme="dark"] .bg-border {
+        @apply border-slate-900;
+    }
+}
+

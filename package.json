@@ -1,0 +1,17 @@
+{
+  "name": "tailwindalpine",
+  "version": "1.0.0",
+  "description": "Tailwind AlpineJs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./public/assets/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.3"
+  },
+  "author": "Lazy",
+  "license": "ISC"
+}
